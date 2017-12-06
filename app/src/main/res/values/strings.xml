@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">KWSTF</string>
+    <string-array name="A1_situation">
+        <item>Trickling</item>
+        <item>Puddle</item>
+        <item>Flowing down street</item>
+        <item>Major Brust</item>
+    </string-array>
 </resources>
+
+

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.myapplication.a2_report">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:gravity="center_horizontal"
+    >
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        style="@style/Title"
+        android:gravity="center_horizontal"
+        android:text="Report a Leak"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:layout_width="250dp"
+        style="@style/Content"
+        android:layout_height="wrap_content"
+        android:text="Where did you spot the leak?"
+        />
+    <EditText
+        android:id="@+id/A1_street"
+        style="@style/SubTitle"
+        android:layout_height="wrap_content"
+        android:hint="Street"
+        android:layout_width="250dp"
+        android:inputType="text"
+
+        />
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <EditText
+        android:id="@+id/A1_town"
+        style="@style/SubTitle"
+        android:layout_height="wrap_content"
+        android:hint="Town"
+        android:layout_width="100dp"
+        android:inputType="text"
+         />
+
+        <EditText
+            android:id="@+id/A1_postcode"
+            style="@style/SubTitle"
+            android:layout_height="wrap_content"
+            android:hint="Postcode"
+            android:layout_width="120dp"
+            android:inputType="text"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="10dp"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="250dp"
+        style="@style/Content"
+        android:layout_height="wrap_content"
+        android:text="Please tell us the nearest landmarks"
+        />
+
+    <EditText
+        android:id="@+id/A1_landmark"
+        style="@style/SubTitle"
+        android:layout_height="wrap_content"
+        android:hint="eg.door number,shop,bus stop etc.;"
+        android:layout_width="250dp"
+        android:inputType="text"
+        android:layout_marginBottom="10dp"
+        />
+    <TextView
+        android:layout_width="250dp"
+        style="@style/Content"
+        android:layout_height="wrap_content"
+        android:text="What's the leaking situation?"
+        android:layout_marginBottom="10dp"
+        />
+    <Spinner
+        android:id="@+id/A1_situation"
+        android:layout_width="250dp"
+        android:layout_height="20dp"
+        android:background="#E1F5FE"
+        android:layout_marginBottom="10dp"
+        >
+    </Spinner>
+
+    <EditText
+        android:id="@+id/A1_addition"
+        style="@style/SubTitle"
+        android:layout_height="60dp"
+        android:hint="Additional information"
+        android:background="#E1F5FE"
+        android:layout_width="250dp"
+        android:inputType="textMultiLine"
+        android:layout_marginBottom="10dp"
+        />
+    <TextView
+        android:layout_width="250dp"
+        style="@style/Content"
+        android:layout_height="wrap_content"
+        android:text="Upload a picture"
+        />
+    <ImageButton
+        android:layout_width="35dp"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/camera"
+        android:layout_height="35dp" />
+    <Button
+        android:id="@+id/A1_sendreport"
+        style="@style/SubTitle"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="Send Report"
+        android:background="#81D4FA"
+        />
+
+    <Button
+        android:id="@+id/A1_cancel"
+        style="@style/SubTitle"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:text="Cancel"
+        android:background="#81D4FA"
+        />
+    
+</LinearLayout>
+</android.support.constraint.ConstraintLayout>
