@@ -1,7 +1,9 @@
 package com.example.administrator.myapplication;
 
+import android.app.Dialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.PopupMenu;
 
 public class a2_report extends AppCompatActivity {
 
@@ -10,4 +12,5 @@ public class a2_report extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_a2__report);
     }
+
 }

@@ -6,6 +6,21 @@
         <item>Flowing down street</item>
         <item>Major Brust</item>
     </string-array>
+    <string name="title_activity_a3__result">KWSTF</string>
+    <string name="title_home">Home</string>
+    <string name="title_myreport">My Report</string>
+    <string name="title_setting">Setting</string>
+
+    <string name="menu_search">Search</string>
+    <string name="menu_about">About</string>
+    <string name="menu_contact">Contact</string>
+
+    <string name="title_activity_a2_report_respond">KWSTF</string>
+    <string name="title_dashboard">My Report</string>
+    <string name="title_notifications">Setting</string>
+
+    <string name="popup_title">Report Sent!</string>
+    <string name="popup_text">Your report has been sent to KWSTF, we are looking for a plumber to fix the leaking.\n \nThank You!</string>
 </resources>
 
 

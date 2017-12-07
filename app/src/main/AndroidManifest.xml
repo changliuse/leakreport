@@ -17,7 +17,17 @@
             </intent-filter>
         </activity>
         <activity android:name=".a2_report" />
-        <activity android:name=".A2_Respond"></activity>
+        <activity
+            android:name=".a3_Result"
+            android:label="@string/title_activity_a3__result" />
+        <activity
+            android:name=".a2_report_respond"
+            android:label="@string/title_activity_a2_report_respond"
+            android:parentActivityName=".a2_report">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.administrator.myapplication.a2_report" />
+        </activity>
     </application>
 
 </manifest>
