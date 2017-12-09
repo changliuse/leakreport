@@ -1,5 +1,6 @@
 package com.example.administrator.myapplication;
 
+import android.content.Intent;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -47,6 +48,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void reportButtonClicked(View view) {
+        Intent intent = new Intent(this, a2_report.class);
+        startActivity(intent);
+
     }
 }
 

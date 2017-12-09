@@ -14,6 +14,16 @@
     android:layout_margin="20dp"
     android:gravity="center_horizontal"
     >
+
+    <EditText
+        android:id="@+id/A1_addition"
+        style="@style/SubTitle"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:background="#E1F5FE"
+        android:hint="Additional information"
+        android:inputType="textMultiLine" />
+
     <TextView
         android:layout_width="250dp"
         android:layout_height="wrap_content"
@@ -93,15 +103,6 @@
         >
     </Spinner>
 
-    <EditText
-        android:id="@+id/A1_addition"
-        style="@style/SubTitle"
-        android:layout_height="60dp"
-        android:hint="Additional information"
-        android:background="#E1F5FE"
-        android:layout_width="250dp"
-        android:inputType="textMultiLine"
-        />
     <TextView
         android:layout_width="250dp"
         style="@style/Content"
@@ -115,14 +116,15 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         />
+
     <Button
         android:id="@+id/A1_sendreport"
         style="@style/SubTitle"
         android:layout_width="100dp"
         android:layout_height="30dp"
-        android:text="Send Report"
         android:background="#81D4FA"
-        />
+        android:onClick="sendreportButtonClicked"
+        android:text="Send Report" />
 
     <Button
         android:id="@+id/A1_cancel"

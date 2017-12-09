@@ -44,7 +44,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="We'll send you a notice\nonce a plumber is find !"
+            android:text="We'll send you a notice\nonce a plumber is found !"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="20dp"/>
     </LinearLayout>
