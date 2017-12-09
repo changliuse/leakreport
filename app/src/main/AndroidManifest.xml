@@ -28,6 +28,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.administrator.myapplication.a2_report" />
         </activity>
+        <activity
+            android:name=".b1_register_form"
+            android:label="@string/title_activity_b1_register_form"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

@@ -21,6 +21,13 @@
 
     <string name="popup_title">Report Sent!</string>
     <string name="popup_text">Your report has been sent to KWSTF, we are looking for a plumber to fix the leaking.\n \nThank You!</string>
+    <string name="title_activity_b1_register_form">KWSTF</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="term">In terms of use, agreement.....</string>
+
 </resources>
 
 

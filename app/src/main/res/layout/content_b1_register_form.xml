@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.administrator.myapplication.b1_register_form"
+    tools:showIn="@layout/app_bar_b1_register_form">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                style="@style/Contentblack"
+                android:text="Already have an account?" />
+
+            <TextView
+                android:id="@+id/login"
+                android:onClick="login"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                style="@style/Content"
+                android:text="login" />
+
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Title"
+        android:text="Register As a Plumber"
+        android:layout_marginBottom="10dp"
+        />
+    <EditText
+        android:id="@+id/b1_name"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        style="@style/Contentblack"
+        android:hint="Name"/>
+        <EditText
+            android:id="@+id/b1_age"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            style="@style/Contentblack"
+            android:hint="Age"/>
+        <EditText
+            android:id="@+id/b1_phone"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            style="@style/Contentblack"
+            android:hint="Phone Number"/>
+        <EditText
+            android:id="@+id/b1_address"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            style="@style/Contentblack"
+            android:hint="Address"/>
+     <Spinner
+         android:id="@+id/b1_workarea"
+         android:layout_width="250dp"
+         android:layout_height="20dp"
+         android:background="#E1F5FE"
+         android:layout_marginBottom="10dp"
+         >
+     </Spinner>
+        <EditText
+            android:id="@+id/b2_experience"
+            style="@style/SubTitle"
+            android:layout_height="60dp"
+            android:hint="Your working experience"
+           android:background="#E1F5FE"
+            android:layout_width="250dp"
+            android:inputType="textMultiLine"
+            />
+        <RadioButton
+            android:id="@+id/b2_toolbox"
+            style="@style/Contentblack"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="I have a tool box"
+            />
+        <RadioButton
+            android:id="@+id/b2_mobility"
+            style="@style/Contentblack"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="I have a bike/car for working use"
+            />
+        <RadioButton
+            android:id="@+id/b2_familar"
+            style="@style/Contentblack"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="I know the area very well"
+            />
+        <Spinner
+            android:id="@+id/b1_worktime"
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:background="#E1F5FE"
+            android:layout_marginBottom="10dp"
+            >
+        </Spinner>
+        <TextView
+            android:layout_width="250dp"
+            style="@style/Content"
+            android:layout_height="wrap_content"
+            android:text="Upload a picture"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/ic_menu_camera"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            />
+        <LinearLayout
+            android:layout_width="250dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+        <CheckBox
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            />
+        <TextView
+            android:layout_width="250dp"
+            style="@style/Contentblack"
+            android:layout_height="wrap_content"
+            android:text="@string/term"
+            />    </LinearLayout>
+
+        <Button
+            android:id="@+id/b1_register"
+            style="@style/SubTitle"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="Register"
+            android:background="#81D4FA"
+            />
+
+        <Button
+            android:id="@+id/b1_cancel"
+            style="@style/SubTitle"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Cancel"
+            android:background="#81D4FA"
+            />
+
+    </LinearLayout>
+    </ScrollView>
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="#0091EA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation"
+        app:itemTextColor="@color/colorMenu"
+        />
+
+</android.support.constraint.ConstraintLayout>

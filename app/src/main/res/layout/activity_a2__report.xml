@@ -5,6 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.administrator.myapplication.a2_report">
+
+
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -18,7 +20,7 @@
         style="@style/Title"
         android:gravity="center_horizontal"
         android:text="Report a Leak"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="10dp"
         />
 
     <TextView
@@ -29,7 +31,7 @@
         />
     <EditText
         android:id="@+id/A1_street"
-        style="@style/SubTitle"
+        style="@style/Contentblack"
         android:layout_height="wrap_content"
         android:hint="Street"
         android:layout_width="250dp"
@@ -42,7 +44,7 @@
         android:orientation="horizontal">
     <EditText
         android:id="@+id/A1_town"
-        style="@style/SubTitle"
+        style="@style/Contentblack"
         android:layout_height="wrap_content"
         android:hint="Town"
         android:layout_width="100dp"
@@ -51,13 +53,13 @@
 
         <EditText
             android:id="@+id/A1_postcode"
-            style="@style/SubTitle"
+            style="@style/Contentblack"
             android:layout_height="wrap_content"
             android:hint="Postcode"
             android:layout_width="120dp"
             android:inputType="text"
             android:layout_marginLeft="30dp"
-            android:layout_marginBottom="10dp"
+
             />
     </LinearLayout>
     <TextView
@@ -74,7 +76,6 @@
         android:hint="eg.door number,shop,bus stop etc.;"
         android:layout_width="250dp"
         android:inputType="text"
-        android:layout_marginBottom="10dp"
         />
     <TextView
         android:layout_width="250dp"
@@ -100,7 +101,6 @@
         android:background="#E1F5FE"
         android:layout_width="250dp"
         android:inputType="textMultiLine"
-        android:layout_marginBottom="10dp"
         />
     <TextView
         android:layout_width="250dp"
@@ -109,11 +109,12 @@
         android:text="Upload a picture"
         />
     <ImageButton
-        android:layout_width="35dp"
-        android:scaleType="centerCrop"
+        android:layout_width="wrap_content"
         android:layout_marginRight="100dp"
-        android:background="@drawable/camera"
-        android:layout_height="35dp" />
+        android:background="@drawable/ic_menu_camera"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        />
     <Button
         android:id="@+id/A1_sendreport"
         style="@style/SubTitle"
@@ -128,10 +129,23 @@
         style="@style/SubTitle"
         android:layout_width="100dp"
         android:layout_height="30dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:text="Cancel"
         android:background="#81D4FA"
         />
     
 </LinearLayout>
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="#0091EA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation"
+        app:itemTextColor="@color/colorMenu"
+        />
 </android.support.constraint.ConstraintLayout>
