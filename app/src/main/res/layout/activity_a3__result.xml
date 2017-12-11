@@ -6,7 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.administrator.myapplication.a3_Result">
-
+    <include
+        layout="@layout/tooll_bar"
+        android:id="@+id/my_tooll_bar"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -32,6 +32,14 @@
             android:name=".b1_register_form"
             android:label="@string/title_activity_b1_register_form"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".b1_register_respond"
+            android:label="@string/title_activity_b1_register_respond"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".b2_register_status"
+            android:label="@string/title_activity_b2_register_status"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

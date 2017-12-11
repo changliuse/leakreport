@@ -15,6 +15,10 @@
     <string name="menu_about">About</string>
     <string name="menu_contact">Contact</string>
 
+    <string name="menu_home">Home</string>
+    <string name="menu_my_profile">My Profile</string>
+    <string name="menu_setting">Setting</string>
+
     <string name="title_activity_a2_report_respond">KWSTF</string>
     <string name="title_dashboard">My Report</string>
     <string name="title_notifications">Setting</string>
@@ -27,7 +31,18 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="term">In terms of use, agreement.....</string>
+    <string name="title_activity_b1_register_respond">Register</string>
 
+    <string name="KWSTF_phone">KWSTF: +254 20 272 90 17 / 8</string>
+
+    <string name="KWSTF_address">KWSTF: 1st Floor,CIC Plaza,Mara Road,\nUpper Hill,Nairobi,Kenya</string>
+
+    <string name="KWSTF_email">KWSTF: info@waterfund.go.ke</string>
+    <string name="title_activity_b2_register_status">My Profile</string>
+
+    <string name="approved">You have successfully registered as our plumber.</string>
+
+    <string name="history">12/01/2016,18:35 Nairbo  Ground Flr,TRM Dr 2:35:00 </string>
 </resources>
 
 
