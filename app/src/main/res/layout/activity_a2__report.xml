@@ -15,15 +15,6 @@
     android:gravity="center_horizontal"
     >
 
-    <EditText
-        android:id="@+id/A1_addition"
-        style="@style/SubTitle"
-        android:layout_width="250dp"
-        android:layout_height="60dp"
-        android:background="#E1F5FE"
-        android:hint="Additional information"
-        android:inputType="textMultiLine" />
-
     <TextView
         android:layout_width="250dp"
         android:layout_height="wrap_content"
@@ -52,6 +43,7 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
     <EditText
         android:id="@+id/A1_town"
         style="@style/Contentblack"
@@ -102,6 +94,14 @@
         android:layout_marginBottom="10dp"
         >
     </Spinner>
+    <EditText
+        android:id="@+id/A1_addition"
+        style="@style/SubTitle"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:background="#E1F5FE"
+        android:hint="Additional information"
+        android:inputType="textMultiLine" />
 
     <TextView
         android:layout_width="250dp"
