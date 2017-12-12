@@ -18,31 +18,40 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        toolbar = (Toolbar) findViewById(R.id.tooll_bar); // Attaching the layout to the toolbar object
+        toolbar = (Toolbar) findViewById(R.id.toolbar); // Attaching the layout to the toolbar object
         setSupportActionBar(toolbar);
     }
-
+    // Chang Liu have coded this part to open the menu items
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu, menu);
+        getMenuInflater().inflate(R.menu.b1_register_form, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.menu_search) {
-            return true;
+        switch (item.getItemId()){
+            case R.id.menu_search:
+            Intent intent= new Intent(MainActivity.this, search.class);
+            startActivity(intent);
         }
+        switch (item.getItemId()){
+            case R.id.menu_about:
+                Intent intent= new Intent(MainActivity.this, about.class);
+                startActivity(intent);
+        }
+        switch (item.getItemId()){
+            case R.id.menu_contact:
+                Intent intent= new Intent(MainActivity.this, contact.class);
+                startActivity(intent);
+        }
+
 
         return super.onOptionsItemSelected(item);
     }
+// Chang Liu have coded this part to open the menu items
 
     public void login(View view) {
     }

@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.administrator.myapplication">
 
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -39,7 +44,21 @@
         <activity
             android:name=".b2_register_status"
             android:label="@string/title_activity_b2_register_status"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".b2_register_status_pending"
+            android:label="@string/title_activity_b2_register_status_pending"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".b1_register_status_rejected"
+            android:label="@string/title_activity_b1_register_status_rejected"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".search" />
+        <activity android:name=".about" />
+        <activity android:name=".contact"></activity>
     </application>
 
 </manifest>

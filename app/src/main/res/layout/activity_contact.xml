@@ -19,20 +19,15 @@
             android:layout_gravity="center_horizontal"
             android:text="Water Sector Trust Fund in Kenya" />
 
-        <ImageView
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
-            android:src="@drawable/logo_wstf" />
+
 
         <RelativeLayout
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
             android:background="#E1F5FE"
-            android:padding="10dp">
+            android:padding="20dp">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -95,27 +90,35 @@
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="180dp"
                 android:text="@string/time" />
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="240dp"
+                android:layout_marginLeft="5dp"
+                style="@style/Contentblack"
+                android:layout_height="wrap_content"
+                android:text="follow us on social media:"/>
             <Button
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="40dp"
-                android:layout_marginTop="240dp"
+                android:layout_marginTop="280dp"
                 android:background="@drawable/facebook" />
 
             <Button
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="120dp"
-                android:layout_marginTop="240dp"
+                android:layout_marginTop="280dp"
                 android:background="@drawable/twitter" />
 
             <Button
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="200dp"
-                android:layout_marginTop="240dp"
+                android:layout_marginTop="280dp"
                 android:background="@drawable/youtube" />
+
         </RelativeLayout>
+
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.administrator.myapplication.b1_register_status_rejected"
+    tools:showIn="@layout/activity_b1_register_status_rejected">
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:text="My Profile"
+            style="@style/Title"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Registion Failed"
+            style="@style/SubTitleblack"/>
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            style="@style/Contentblack"
+            android:text="Sorry, your registion was rejected due to some reasons, please contact us for the details."/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            style="@style/Contentblack"
+            android:text="Find Us Here:"/>
+        <RelativeLayout
+            android:layout_width="250dp"
+            android:background="#E1F5FE"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:layout_marginLeft="50dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_call_black_24dp"/>
+            <TextView
+                android:id="@+id/KWSTF_phone"
+                android:layout_marginLeft="50dp"
+                style="@style/Content"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/KWSTF_phone"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/KWSTF_address"
+                android:src="@drawable/ic_location_on_black_24dp" />
+
+            <TextView
+                android:id="@+id/KWSTF_address"
+                android:layout_marginTop="60dp"
+                style="@style/Content"
+                android:layout_marginLeft="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/KWSTF_address"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="120dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_email_black_24dp"/>
+            <TextView
+                android:id="@+id/KWSTF_emial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="130dp"
+                android:layout_marginLeft="50dp"
+                style="@style/Content"
+                android:text="@string/KWSTF_email"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/menu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="#0091EA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/menu"
+        app:itemTextColor="@color/colorMenu"
+        />
+</android.support.constraint.ConstraintLayout>

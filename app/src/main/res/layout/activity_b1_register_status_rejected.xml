@@ -4,16 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.administrator.myapplication.b1_register_respond">
+    tools:context="com.example.administrator.myapplication.b1_register_status_rejected">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay">
 
-
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_b1_register_respond" />
+    <include layout="@layout/content_b1_register_status_rejected" />
 
 </android.support.design.widget.CoordinatorLayout>

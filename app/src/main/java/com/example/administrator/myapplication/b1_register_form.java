@@ -1,5 +1,6 @@
 package com.example.administrator.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -16,22 +17,14 @@ import android.view.MenuItem;
 public class b1_register_form extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_b1_register_form);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        
-
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.addDrawerListener(toggle);
-        toggle.syncState();
-
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
     }
 
     @Override
@@ -44,6 +37,7 @@ public class b1_register_form extends AppCompatActivity
         }
     }
 
+    // Chang Liu have coded this part to open the menu items
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -53,18 +47,27 @@ public class b1_register_form extends AppCompatActivity
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.menu_about) {
-            return true;
+        switch (item.getItemId()){
+            case R.id.menu_search:
+                Intent intent= new Intent(b1_register_form.this, search.class);
+                startActivity(intent);
         }
+        switch (item.getItemId()){
+            case R.id.menu_about:
+                Intent intent= new Intent(b1_register_form.this, about.class);
+                startActivity(intent);
+        }
+        switch (item.getItemId()){
+            case R.id.menu_contact:
+                Intent intent= new Intent(b1_register_form.this, contact.class);
+                startActivity(intent);
+        }
+
 
         return super.onOptionsItemSelected(item);
     }
+// Chang Liu have coded this part to open the menu items
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override

@@ -31,18 +31,43 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="term">In terms of use, agreement.....</string>
-    <string name="title_activity_b1_register_respond">Register</string>
+    <string name="title_activity_b1_register_respond">KWSTF</string>
 
     <string name="KWSTF_phone">KWSTF: +254 20 272 90 17 / 8</string>
 
     <string name="KWSTF_address">KWSTF: 1st Floor,CIC Plaza,Mara Road,\nUpper Hill,Nairobi,Kenya</string>
 
     <string name="KWSTF_email">KWSTF: info@waterfund.go.ke</string>
-    <string name="title_activity_b2_register_status">My Profile</string>
+    <string name="title_activity_b2_register_status">KWSFT</string>
 
     <string name="approved">You have successfully registered as our plumber.</string>
 
-    <string name="history">12/01/2016,18:35 Nairbo  Ground Flr,TRM Dr 2:35:00 </string>
+    <string name="history">12/09/2017,18:35 Nairbo  Ground Flr,TRM Dr 2:35:00 </string>
+    <string name="history2">5/08/2017,12:00 Nairbo  Zima Hotel, Kamiti Rd, 1:00:00 </string>
+    <string name="history3">11/07/2017,08:23 Nairbo  Shark Place, Kamiti Rd 2:35:00 </string>
+    <string name="history4">22/03/2017,13:45 Nairbo  Wanho Jacaranda Gardens, Kamiti Rd 2:35:00 </string>
+    <string name="title_activity_login">KWSTF</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Phone Number</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This phone number is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing phone number
+        completions."
+    </string>
+    <string name="title_activity_b2_register_status_pending">KWSTF</string>
+    <string name="title_activity_b1_register_status_rejected">KWSTF</string>
+    <string name="title_activity_testout">testout</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="time">Work Time Monday - Friday  8AM - 5PM (E.A.T.)</string>
+
+    <string name="about">Water Services Trust Fund (WSTF) is a State Corporation established under the Water Act (2002) with the mandate "to assist in financing the provision of water services to areas of Kenya which are without adequate water services."</string>
 </resources>
 
 

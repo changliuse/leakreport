@@ -10,12 +10,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-public class b1_register_respond extends AppCompatActivity {
+public class b1_register_status_rejected extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_b1_register_respond);
+        setContentView(R.layout.activity_b1_register_status_rejected);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -33,24 +33,22 @@ public class b1_register_respond extends AppCompatActivity {
 
         switch (item.getItemId()){
             case R.id.menu_search:
-                Intent intent= new Intent(b1_register_respond.this, search.class);
+                Intent intent= new Intent(b1_register_status_rejected.this, search.class);
                 startActivity(intent);
         }
         switch (item.getItemId()){
             case R.id.menu_about:
-                Intent intent= new Intent(b1_register_respond.this, about.class);
+                Intent intent= new Intent(b1_register_status_rejected.this, about.class);
                 startActivity(intent);
         }
         switch (item.getItemId()){
             case R.id.menu_contact:
-                Intent intent= new Intent(b1_register_respond.this, contact.class);
+                Intent intent= new Intent(b1_register_status_rejected.this, contact.class);
                 startActivity(intent);
         }
 
 
         return super.onOptionsItemSelected(item);
     }
-    // Chang Liu have coded this part to open the menu items
-    public void openmyprofle(View view) {
-    }
+// Chang Liu have coded this part to open the menu items
 }
